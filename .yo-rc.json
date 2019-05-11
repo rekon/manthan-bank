@@ -1,0 +1,37 @@
+{
+  "generator-jhipster": {
+    "promptValues": {
+      "packageName": "com.manthan.bank"
+    },
+    "jhipsterVersion": "6.0.1",
+    "applicationType": "monolith",
+    "baseName": "ManthanBank",
+    "packageName": "com.manthan.bank",
+    "packageFolder": "com/manthan/bank",
+    "serverPort": "8080",
+    "authenticationType": "jwt",
+    "cacheProvider": "ehcache",
+    "enableHibernateCache": false,
+    "websocket": false,
+    "databaseType": "mongodb",
+    "devDatabaseType": "mongodb",
+    "prodDatabaseType": "mongodb",
+    "searchEngine": false,
+    "messageBroker": false,
+    "serviceDiscoveryType": false,
+    "buildTool": "maven",
+    "enableSwaggerCodegen": false,
+    "jwtSecretKey": "OWE0YzJhY2U1NmEzZTc1MjRmY2JlMDg2N2IxYzk2YTcwY2Q4Y2JjZmUzMTM4ZWEyYmE5N2M5ZDRkNWNjNGM1NWQ4MzJhMWQwOTE5ZjI4OTdhYzNiNTM5YjlkYWY2NTRkM2RjZWRjMmI4OGMyNmJlMDY4ZjdhNWZlNzUxZmRjNmM=",
+    "clientFramework": "react",
+    "clientTheme": "cosmo",
+    "clientThemeVariant": "primary",
+    "useSass": true,
+    "clientPackageManager": "npm",
+    "testFrameworks": [],
+    "jhiPrefix": "jhi",
+    "entitySuffix": "",
+    "dtoSuffix": "DTO",
+    "otherModules": [],
+    "enableTranslation": false
+  }
+}

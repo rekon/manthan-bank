@@ -1,0 +1,93 @@
+# ===================================================================
+# Spring Boot configuration.
+#
+# This configuration is used for unit/integration tests.
+#
+# More information on profiles: https://www.jhipster.tech/profiles/
+# More information on configuration properties: https://www.jhipster.tech/common-application-properties/
+# ===================================================================
+
+# ===================================================================
+# Standard Spring Boot properties.
+# Full reference is available at:
+# http://docs.spring.io/spring-boot/docs/current/reference/html/common-application-properties.html
+# ===================================================================
+
+spring:
+  application:
+    name: ManthanBank
+  data:
+    mongodb:
+      host: localhost
+      port: 0
+      database: ManthanBank
+  mail:
+    host: localhost
+  main:
+    allow-bean-definition-overriding: true
+  messages:
+    basename: i18n/messages
+  mvc:
+    favicon:
+      enabled: false
+  task:
+    execution:
+      thread-name-prefix: manthan-bank-task-
+      pool:
+        core-size: 1
+        max-size: 50
+        queue-capacity: 10000
+    scheduling:
+      thread-name-prefix: manthan-bank-scheduling-
+      pool:
+        size: 1
+  thymeleaf:
+    mode: HTML
+
+server:
+  port: 10344
+  address: localhost
+
+# ===================================================================
+# JHipster specific properties
+#
+# Full reference is available at: https://www.jhipster.tech/common-application-properties/
+# ===================================================================
+
+jhipster:
+  clientApp:
+    name: 'manthanBankApp'
+  logging:
+    # To test json console appender
+    use-json-format: true # By default, logs are in Json format
+    # To test logstash appender
+    logstash:
+      enabled: true
+      host: localhost
+      port: 5000
+      queue-size: 512
+  mail:
+    from: test@localhost
+    base-url: http://127.0.0.1:8080
+  security:
+    authentication:
+      jwt:
+        # This token must be encoded using Base64 (you can type `echo 'secret-key'|base64` on your command line)
+        base64-secret: OWE0YzJhY2U1NmEzZTc1MjRmY2JlMDg2N2IxYzk2YTcwY2Q4Y2JjZmUzMTM4ZWEyYmE5N2M5ZDRkNWNjNGM1NWQ4MzJhMWQwOTE5ZjI4OTdhYzNiNTM5YjlkYWY2NTRkM2RjZWRjMmI4OGMyNmJlMDY4ZjdhNWZlNzUxZmRjNmM=
+        # Token is valid 24 hours
+        token-validity-in-seconds: 86400
+  metrics:
+    logs: # Reports metrics in the logs
+      enabled: true
+      report-frequency: 60 # in seconds
+
+# ===================================================================
+# Application specific properties
+# Add your own application properties here, see the ApplicationProperties class
+# to have type-safe configuration, like in the JHipsterProperties above
+#
+# More documentation is available at:
+# https://www.jhipster.tech/common-application-properties/
+# ===================================================================
+
+# application:
