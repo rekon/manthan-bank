@@ -1,0 +1,78 @@
+{
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "relationships": [],
+    "fields": [
+        {
+            "fieldName": "customerId",
+            "fieldType": "Long",
+            "fieldValidateRules": [
+                "required",
+                "unique"
+            ]
+        },
+        {
+            "fieldName": "name",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "limitBalance",
+            "fieldType": "Long",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "sex",
+            "fieldType": "Gender",
+            "fieldValues": "OTHER,MALE,FEMALE",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "education",
+            "fieldType": "EducationalQualification",
+            "fieldValues": "UNKNOWN0,GRADUATE_SCHOOL,UNIVERSITY,HIGH_SCHOOL,OTHERS,UNKNOWN,UNKNOWN2",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "marriage",
+            "fieldType": "MaritalStatus",
+            "fieldValues": "UNKNOWN,MARRIED,SINGLE,OTHERS",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "age",
+            "fieldType": "Integer",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "creditHistory",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "isDefaulter",
+            "fieldType": "Boolean",
+            "fieldValidateRules": [
+                "required"
+            ]
+        }
+    ],
+    "dto": "mapstruct",
+    "searchEngine": false,
+    "service": "serviceImpl",
+    "entityTableName": "customer",
+    "databaseType": "mongodb",
+    "jpaMetamodelFiltering": false,
+    "pagination": "pagination"
+}
